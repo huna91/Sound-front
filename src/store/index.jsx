@@ -1,7 +1,5 @@
-import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import { createWrapper, HYDRATE } from "next-redux-wrapper";
-import { useDispatch } from "react-redux";
-import rootReducer from "./reducer";
+import { configureStore } from "@reduxjs/toolkit";
+import rootReducer from "./reducers";
 import {
   persistStore,
   persistReducer,
@@ -14,7 +12,6 @@ import {
 } from "redux-persist";
 import logger from "redux-logger";
 import storage from "redux-persist/lib/storage";
-import userSlice from "./userSclice";
 
 const persistConfig = {
   key: "root",
@@ -23,10 +20,6 @@ const persistConfig = {
   // 어떤 reducer를 로컬스토리지에 저장할건지
   whiteList: ["userSlice"],
 };
-
-const rootReducer = combineReducers({
-  userInfo: userSlice.reducer,
-});
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
