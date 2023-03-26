@@ -1,12 +1,7 @@
 import style from "@/styles/Home.module.css";
-import { Layout } from "@/components";
 
 const Home = () => {
-  return (
-    <>
-      <Layout />
-    </>
-  );
+  return <></>;
 };
 
 export default Home;

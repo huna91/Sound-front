@@ -1,9 +1,98 @@
+/* === pages ==================================*/
+/* ========== landing =========================*/
+.landing_wrap {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  background-color: #ffffff;
+  position: relative;
+  border: 1px solid pink;
+}
+.landing_left {
+  width: 1080px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e1e3;
+}
+
+.landing_right {
+  width: 780px;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 60px;
+}
+.landing_right_title {
+  width: 800px; /* 530px */
+  height: 48px; /* 48px */
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+.landing_right_subTitle {
+  width: 705px;
+  height: 96px; /* 96px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+.landing_right_contents {
+  width: 683px;
+  height: 238px; /* 238px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin-bottom: 150px;
+}
+.landing_right_button {
+  box-sizing: border-box;
+  width: 710px;
+  height: 90px;
+  background-color: violet;
+  border: none;
+  border-radius: 50px;
+  font-size: 30px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.landing_right_button :hover {
+  box-shadow: 0 0 10px red;
+}
+/*=== components ==================================*/
+/*=============== layout ==================================*/
 .layout_wrap {
   width: 1920px;
   height: 1080px;
   display: block;
-  background-color: #e0e1e3;
+  background-color: red;
   overflow: hidden;
   position: absolute;
   border-radius: 0px 0px 0px 0px;
+}
+
+.moving_audio_spectrum {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  width: 100%;
+  background-color: #000;
+}
+
+.bar {
+  width: 10px;
+  margin: 0 2px;
 }
