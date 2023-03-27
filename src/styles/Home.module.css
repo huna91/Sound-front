@@ -68,6 +68,8 @@
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
 }
+.landing_right_button::after {
+}
 .landing_right_button :hover {
   box-shadow: 0 0 10px red;
 }

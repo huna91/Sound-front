@@ -15,7 +15,11 @@ const Landing = () => {
       <main>
         <div className={styles.landing_wrap}>
           <div className={styles.landing_left}>
-            <Image src={"/images/landing_img"} width={900} height={900}></Image>
+            <Image
+              src={"/images/landing_img.png"}
+              width={900}
+              height={900}
+            ></Image>
           </div>
           <div className={styles.landing_right}>
             <h1 className={styles.landing_right_title}>
