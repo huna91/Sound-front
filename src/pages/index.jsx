@@ -1,11 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
+import { passive } from "@/store/reducers/landingActive";
+import { useEffect } from "react";
 
 const Landing = () => {
   console.log("INDEX");
+  const router = useRouter();
+  const dispatch = useDispatch();
+  const landActiveInfo = useSelector((state) => state.landingInfo);
+  if (!landActiveInfo.landing_active) router.replace("/home");
 
+  useEffect(() => {}, []);
   return (
     <>
       <Head>
@@ -15,7 +23,13 @@ const Landing = () => {
       <main>
         <div className={styles.landing_wrap}>
           <div className={styles.landing_left}>
-            <Image src={"/images/landing_img"} width={900} height={900}></Image>
+            <Image
+              priority={true}
+              src="/images/landing_img.png"
+              alt="landing_img"
+              width={900}
+              height={900}
+            ></Image>
           </div>
           <div className={styles.landing_right}>
             <h1 className={styles.landing_right_title}>
@@ -39,7 +53,13 @@ const Landing = () => {
               today and discover the perfect soundtrack to elevate your next
               project!
             </div>
-            <button className={styles.landing_right_button}>
+            <button
+              className={styles.landing_right_button}
+              onClick={() => {
+                dispatch(passive());
+                router.replace("/home");
+              }}
+            >
               Let's Get it!
             </button>
           </div>

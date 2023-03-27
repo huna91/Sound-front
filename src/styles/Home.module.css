@@ -73,14 +73,53 @@
 }
 /*=== components ==================================*/
 /*=============== layout ==================================*/
-.layout_wrap {
+.layout_main {
   width: 1920px;
   height: 1080px;
-  display: block;
-  background-color: red;
+  background-color: #e0e1e3;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_wrap {
+  width: 1840px;
+  height: 1020px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 28px 28px 50px 0px rgba(13, 39, 80, 0.16),
+    -23px -23px 45px 0px #ffffff;
+  background-color: #e0e1e3;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
   position: absolute;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 43px;
+}
+.layout_left {
+  flex-shrink: 0;
+  width: 240px;
+  height: 980px;
+  box-shadow: inset -20px -20px 43px 0px rgba(255, 255, 255, 0.64),
+    inset 15px 15px 35px 0px rgba(13, 39, 80, 0.16);
+  background-color: #e0e1e3;
+  overflow: visible;
+  z-index: 1;
+  border-radius: 30px;
+}
+.layout_right {
+  flex-shrink: 0;
+  width: 1540px;
+  height: 980px;
+  margin-left: 20px;
+  box-shadow: inset -31px -31px 43px 0px rgba(255, 255, 255, 0.64),
+    inset 26px 26px 30px 0px rgba(13, 39, 80, 0.16);
+  background-color: #e0e1e3;
+  overflow: visible;
+  z-index: 1;
+  border-radius: 30px;
 }
 
 .moving_audio_spectrum {

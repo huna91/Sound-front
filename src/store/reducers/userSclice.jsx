@@ -22,6 +22,7 @@ const userSlice = createSlice({
   },
   extraReducers: (builder) => {
     // builder.addCase();
+    // builder.addCase();
     // 이런식으로 하면 될듯
     // .addCase(fetchUserImage.pending, (state) => {
     //     state.userImage;
