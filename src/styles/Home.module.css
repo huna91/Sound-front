@@ -110,6 +110,60 @@
   overflow: visible;
   z-index: 1;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.layout_left_user {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: visible;
+  align-content: center;
+}
+.layout_left_userImage_wrap {
+  border-radius: 100px;
+  width: 164px;
+  height: 164px;
+  /* border: 1px solid blue; */
+  box-shadow: 13px 13px 20px 0px rgba(13, 39, 80, 0.2),
+    -8px -8px 20px 0px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_left_userImage {
+  border-radius: 100px;
+  width: 160px;
+  height: 160px;
+}
+.layout_left_userName {
+  box-sizing: border-box;
+  width: min-content; /* 100px */
+  height: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 8px 8px 20px 0px rgba(13, 39, 80, 0.2), -8px -8px 18px 0px #ffffff;
+  background-color: #e0e1e3;
+  min-width: 100px;
+  align-content: center;
+  border-radius: 8px;
+}
+.layout_left_menu {
+}
+.layout_left_userName_menu {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
 }
 .layout_right {
   flex-shrink: 0;
