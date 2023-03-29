@@ -158,12 +158,24 @@
   align-content: center;
   border-radius: 8px;
 }
-.layout_left_menu {
+.layout_left_menu_wrap {
+  margin-top: 20px;
 }
-.layout_left_userName_menu {
+.layout_left_menu {
   width: 200px;
   height: 60px;
+  margin-top: 20px;
   border-radius: 10px;
+  display: flex;
+}
+.layout_left_menu:hover {
+  transition: 0.4s;
+  box-shadow: 8px 8px 20px 0px rgba(13, 39, 80, 0.2), -8px -8px 18px 0px #ffffff;
+  background-color: #e0e1e3;
+}
+.layout_left_menu_icon {
+}
+.layout_left_menu_title {
 }
 .layout_right {
   flex-shrink: 0;
