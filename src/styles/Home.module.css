@@ -161,6 +161,10 @@
 .layout_left_menu_wrap {
   margin-top: 20px;
 }
+.layout_left_menu_active {
+  box-shadow: 8px 8px 20px 0px rgba(13, 39, 80, 0.2), -8px -8px 18px 0px #ffffff;
+  background-color: #e0e1e3;
+}
 .layout_left_menu {
   width: 200px;
   height: 60px;
@@ -188,6 +192,26 @@
   overflow: visible;
   z-index: 1;
   border-radius: 30px;
+  position: relative;
+}
+.layout_right_header {
+  width: 1500px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 12px 12px 20px 0px rgba(13, 39, 80, 0.16),
+    -8px -8px 30px 0px #ffffff;
+  background-color: #e0e1e3;
+  overflow: visible;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
 }
 
 .moving_audio_spectrum {

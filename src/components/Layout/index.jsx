@@ -20,7 +20,9 @@ const Layout = (props) => {
           </div>
           <Menubar />
         </div>
-        <div className={style.layout_right}></div>
+        <div className={style.layout_right}>
+          <div className={style.layout_right_header}></div>
+        </div>
       </div>
       <div>{props.children}</div>
     </main>

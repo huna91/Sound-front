@@ -4,6 +4,7 @@ import { store, persistor } from "@/store";
 import { PersistGate } from "redux-persist/lib/integration/react";
 import { useSelector } from "react-redux";
 import Landing from ".";
+import Head from "next/head";
 
 // components
 import { Layout, Loading } from "@/components";
@@ -16,6 +17,10 @@ export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={null}>
+        <Head>
+          <title>Y-Sound</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         {Component == Landing ? (
           <Component {...pageProps} />
         ) : (
